@@ -1,4 +1,4 @@
-import 'package:date_picker_plus/date_picker_plus.dart';
+import 'package:tl_date_picker/tl_date_picker.dart';
 
 /// Initial display of the picker.
 ///

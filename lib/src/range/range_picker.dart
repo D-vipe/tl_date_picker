@@ -263,10 +263,9 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
   @override
   void initState() {
     _pickerType = widget.initialPickerType;
-    final clampedInitailDate = DateUtilsX.clampDateToRange(
-        max: widget.maxDate, min: widget.minDate, date: DateTime.now());
-    _diplayedDate =
-        DateUtils.dateOnly(widget.initialDate ?? clampedInitailDate);
+    final clampedInitailDate =
+        DateUtilsX.clampDateToRange(max: widget.maxDate, min: widget.minDate, date: DateTime.now());
+    _diplayedDate = DateUtils.dateOnly(widget.initialDate ?? clampedInitailDate);
 
     if (widget.selectedRange != null) {
       _selectedStartDate = DateUtils.dateOnly(widget.selectedRange!.start);
@@ -295,8 +294,7 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
     if (widget.initialDate != oldWidget.initialDate) {
       final clampedInitailDate = DateUtilsX.clampDateToRange(
           max: widget.maxDate, min: widget.minDate, date: DateTime.now());
-      _diplayedDate =
-          DateUtils.dateOnly(widget.initialDate ?? clampedInitailDate);
+      _diplayedDate = DateUtils.dateOnly(widget.initialDate ?? clampedInitailDate);
     }
 
     super.didUpdateWidget(oldWidget);
@@ -310,8 +308,7 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
           padding: widget.padding,
           child: RangeDaysPicker(
             centerLeadingDate: widget.centerLeadingDate,
-            currentDate:
-                DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
+            currentDate: DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
             initialDate: _diplayedDate,
             selectedEndDate: _selectedEndDate,
             selectedStartDate: _selectedStartDate,
@@ -373,8 +370,7 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
             selectedDate: null,
             maxDate: DateUtils.dateOnly(widget.maxDate),
             minDate: DateUtils.dateOnly(widget.minDate),
-            currentDate:
-                DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
+            currentDate: DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
             currentDateDecoration: widget.currentDateDecoration,
             currentDateTextStyle: widget.currentDateTextStyle,
             disabledCellsDecoration: widget.disabledCellsDecoration,
@@ -419,8 +415,7 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
             initialDate: _diplayedDate,
             maxDate: DateUtils.dateOnly(widget.maxDate),
             minDate: DateUtils.dateOnly(widget.minDate),
-            currentDate:
-                DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
+            currentDate: DateUtils.dateOnly(widget.currentDate ?? DateTime.now()),
             currentDateDecoration: widget.currentDateDecoration,
             currentDateTextStyle: widget.currentDateTextStyle,
             disabledCellsDecoration: widget.disabledCellsDecoration,

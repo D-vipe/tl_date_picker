@@ -1,8 +1,10 @@
-name: date_picker_plus
+name: tl_date_picker
 description: A Flutter library that provides a customizable Material Design date and range picker widgets.
 version: 4.1.0
 
-repository: https://github.com/hasanmhallak/date_picker
+publish_to: none
+
+# repository: https://github.com/hasanmhallak/date_picker
 
 environment:
   sdk: ">=2.18.0 <4.0.0"

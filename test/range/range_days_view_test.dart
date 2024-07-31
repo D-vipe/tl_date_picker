@@ -1,8 +1,8 @@
-import 'package:date_picker_plus/src/range/range_days_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:intl/intl.dart' as intl;
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:tl_date_picker/src/range/range_days_view.dart';
 
 void main() {
   group('RangeRangeDaysView', () {
